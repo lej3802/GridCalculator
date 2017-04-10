@@ -8,13 +8,13 @@
     tools:context="ljhi0222.kr.hs.emirim.gridcalculator.MainActivity">
 
     <EditText
-        android:id="@+id/input1"
+        android:id="@+id/edit1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         />
 
     <EditText
-        android:id="@+id/input2"
+        android:id="@+id/edit2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         />
@@ -98,7 +98,7 @@
 
 </GridLayout>
     <Button
-        android:id="@+id/add"
+        android:id="@+id/cal1"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -108,7 +108,7 @@
         />
 
     <Button
-        android:id="@+id/minus"
+        android:id="@+id/cal2"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -117,7 +117,7 @@
         />
 
     <Button
-        android:id="@+id/mult"
+        android:id="@+id/cal3"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -126,11 +126,20 @@
         />
 
     <Button
-        android:id="@+id/divid"
+        android:id="@+id/cal4"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="나 누 기"
+        android:textSize="30dp"
+        />
+
+    <TextView
+        android:id="@+id/res"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
         android:textSize="30dp"
         />
 
