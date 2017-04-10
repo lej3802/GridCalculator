@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
         edit2=(EditText)findViewById(R.id.edit2);
         edit1.setOnTouchListener(editHandler);
         edit2.setOnTouchListener(editHandler);
+        res=(TextView)findViewById(R.id.res);
 
         for(int i=0; i<butNums.length; i++){
 //            butNums[i]=(Button)findViewById(ids[i]);
@@ -60,7 +61,25 @@ public class MainActivity extends AppCompatActivity {
     View.OnClickListener butOpsHandler= new View.OnClickListener(){
         @Override
         public void onClick(View view){
+            int num1 = Integer.parseInt(edit1.getText().toString());
+            int num2 = Integer.parseInt(edit2.getText().toString());
+            double result = 0;
 
+            switch(view.getId()){
+                case R.id.cal1:
+                    result=num1+num2;
+                    break;
+                case R.id.cal2:
+                    result=num1-num2;
+                    break;
+                case R.id.cal3:
+                    result=num1*num2;
+                    break;
+                case R.id.cal4:
+                    result=(double)num1/num2;
+                    break;
+            }
+            res.setText("계산 결과 = " + result);
       }
     };
 
